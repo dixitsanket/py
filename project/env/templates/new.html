@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head><title></title></head>
+    <body>
+        <h1>welcome to the site {{my_variable}}</h1>
+        <h2>{{letter}}</h2>
+        <h2>image of pupppy</h2>
+        <img src="../static/puppy_pic.jpg" alt="">
+        <ul>
+            {% for item in letter %}
+            <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+       {% if 'i' in letter %}
+       <p>i found</p> 
+       {% else %}
+       <p>i not found</p>
+       {% endif %}
+    </body>
+</html>
